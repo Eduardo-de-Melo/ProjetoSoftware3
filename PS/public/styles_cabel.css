@@ -1,0 +1,131 @@
+.user-name,.user-photo{
+    margin-left: 5px;
+}
+
+.settings-icon{
+    margin-right: 5px;
+}
+
+.user-photo {
+    width: 30px; /* Ajuste conforme necessário */
+    height: 30px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Torna a foto circular */
+    background-color: #8A2BE2; /* Cor de fundo da foto (pode ser substituída pela imagem do usuário) */
+    display: inline-block;
+}
+
+.user-name {
+ /* Espaço entre a foto e o nome */
+    font-family: palatino, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Estilos para os retângulos dos dias da semana */
+.cabel-rectangle {
+    width: 300px; /* Ajuste conforme necessário */
+    height: 80px; /* Ajuste conforme necessário */
+    background-color: #873286; /* Cor de fundo dos retângulos */
+    border: 1px solid #ccc; /* Borda dos retângulos */
+    color: #ffffff;
+    text-align: center; /* Centraliza o texto */
+    line-height: 80px; /* Centraliza verticalmente o texto */
+    margin-bottom: 10px; /* Espaçamento entre os retângulos */
+    position: relative; /* Permite posicionamento relativo */
+}
+
+/* Estilos para o texto dentro dos retângulos */
+.cabel-name {
+    position: absolute; /* Permite posicionamento absoluto */
+    top: 50%; /* Alinha o texto verticalmente ao centro */
+    left: 50%; /* Alinha o texto horizontalmente ao centro */
+    transform: translate(-50%, -50%); /* Move o texto para o centro */
+    font-family: palatino, serif;
+    font-size: 22px;
+}
+
+
+.titulo{
+    color: #ffffff;
+    font-family: palatino, serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cabel-link:hover .cabel-rectangle {
+    background-color: #2a23ac; /* Retângulo coral ao passar o mouse */
+    color: #ffffff; /* Texto branco ao passar o mouse */
+}
+
+.container{
+    max-width: 100%;
+}
+
+.menu{
+    margin-top: 30px;
+}
+
+.btn-primary.menu{
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    margin-top: 15px;
+}
+
+.btn-primary.menu:hover {
+    background-color: #ff6f61; /* Botão coral ao passar o mouse */
+    border-color: #ff6f61; /* Borda coral */
+}
+
+.nome_link{
+    color: rgb(238, 238, 238);
+    text-decoration:none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(to bottom, #4B0082, #8A2BE2);
+    
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1); /* Um quadrado branco semi-transparente */
+    transform: rotate(45deg); /* Rotaciona a forma */
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1); /* Outro quadrado branco semi-transparente */
+    transform: rotate(45deg); /* Rotaciona a forma */
+}
+
+.settings{
+    margin-top: 5px;
+    margin-right: 5px;
+    color: #ece4e4;
+    background-color: #8A2BE2; /* Cor do ícone de configurações (pode ser substituída pelo ícone real) */
+    display: inline-block;
+}
+
+.settings:hover{
+    background-color: #ff6f61; /* Botão coral ao passar o mouse */
+    border-color: #ff6f61;
+}
